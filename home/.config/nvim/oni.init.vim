@@ -6,3 +6,5 @@ set noruler
 set laststatus=0
 set noshowcmd
 set mouse=a
+
+colorscheme gruvbox

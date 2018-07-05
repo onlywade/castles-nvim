@@ -1,6 +1,7 @@
 set nocompatible
 syntax on
 syntax enable
+"set termguicolors
 
 filetype plugin on
 
@@ -9,18 +10,23 @@ Plug 'scrooloose/nerdtree'
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-scripts/vimwiki'
 Plug 'justinmk/vim-sneak'
+Plug 'airblade/vim-gitgutter'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
-set omnifunc=syntaxcomplete#Complete
-
 set autoindent
+set smartindent
 set nowrap
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
 set backspace=indent,eol,start
+set omnifunc=syntaxcomplete#Complete
 setlocal nospell
+setlocal formatoptions=ctnqro
+setlocal comments+=n:*,n:#
 vnoremap . :norm.<CR>
 
 " change tabstops and stuff for Ruby, HTML
