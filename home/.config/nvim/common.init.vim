@@ -40,6 +40,8 @@ let mapleader = ","
 imap jj <Esc>
 nmap <C-j> 3j3<C-e>
 nmap <C-k> 3k3<C-y>
+noremap <Leader>Y "*y
+noremap <Leader>P "*p
 
 " vimwiki config
 filetype plugin on
@@ -83,7 +85,7 @@ augroup END
 autocmd BufWritePre *.py,*.xml :%s/\s\+$//e
 
 " NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', '__pycache__']
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
