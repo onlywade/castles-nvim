@@ -13,6 +13,10 @@ Plug 'justinmk/vim-sneak'
 Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mileszs/ack.vim'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'maksimr/vim-jsbeautify'
 call plug#end()
 
 set autoindent
@@ -23,10 +27,9 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set backspace=indent,eol,start
-set omnifunc=syntaxcomplete#Complete
 setlocal nospell
 setlocal formatoptions=ctnqro
-setlocal comments+=n:*,n:#
+set comments=n:*,n:#,b:-
 vnoremap . :norm.<CR>
 
 " change tabstops and stuff for Ruby, HTML
@@ -44,7 +47,6 @@ noremap <Leader>Y "*y
 noremap <Leader>P "*p
 
 " vimwiki config
-filetype plugin on
 map <Leader>d :VimwikiToggleListItem<CR>
 let g:vimwiki_list = [{'path': '/Users/wcatron/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
@@ -63,6 +65,7 @@ set ignorecase
 set smartcase
 
 " Tab completion
+set omnifunc=syntaxcomplete#Complete
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
