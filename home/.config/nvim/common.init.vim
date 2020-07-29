@@ -6,22 +6,24 @@ syntax enable
 filetype plugin on
 
 call plug#begin()
-Plug 'scrooloose/nerdtree'
-Plug 'altercation/vim-colors-solarized'
 Plug 'vim-scripts/vimwiki'
 Plug 'justinmk/vim-sneak'
-Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
 Plug 'tmhedberg/SimpylFold'
 Plug 'Konfekt/FastFold'
 Plug 'dense-analysis/ale'
+if !exists('g:vscode')
+    Plug 'scrooloose/nerdtree'
+    Plug 'altercation/vim-colors-solarized'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'plasticboy/vim-markdown'
+endif
 call plug#end()
 
 let g:vim_markdown_folding_disabled = 1
