@@ -26,6 +26,9 @@ call plug#end()
 
 let g:vim_markdown_folding_disabled = 1
 
+" for json
+autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
+
 set autoindent
 set smartindent
 set nowrap
@@ -45,6 +48,7 @@ au BufNewFile,BufRead *.gradle setf groovy
 autocmd FileType rb, html, groovy setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType groovy setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType json setlocal shiftwidth=2 tabstop=2
 
 " Cool mappings
 let mapleader = ","
