@@ -17,7 +17,11 @@ Plug 'mileszs/ack.vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'maksimr/vim-jsbeautify'
+Plug 'tmhedberg/SimpylFold'
+Plug 'Konfekt/FastFold'
 call plug#end()
+
+let g:vim_markdown_folding_disabled = 1
 
 set autoindent
 set smartindent
@@ -27,6 +31,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set backspace=indent,eol,start
+set nofoldenable
 setlocal nospell
 setlocal formatoptions=ctnqro
 set comments=n:*,n:#,b:-
