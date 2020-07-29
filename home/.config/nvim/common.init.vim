@@ -21,6 +21,7 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
 Plug 'tmhedberg/SimpylFold'
 Plug 'Konfekt/FastFold'
+Plug 'dense-analysis/ale'
 call plug#end()
 
 let g:vim_markdown_folding_disabled = 1
