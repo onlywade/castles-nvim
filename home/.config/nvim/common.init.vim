@@ -59,6 +59,9 @@ noremap <Leader>Y "*y
 noremap <Leader>P "*p
 noremap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
+" 'edit alternate file' convenience mapping
+nnoremap <BS> <C-^>
+
 " vimwiki config
 map <Leader>d :VimwikiToggleListItem<CR>
 let g:vimwiki_list = [{'path': '/Users/wcatron/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
