@@ -51,8 +51,10 @@ map <Leader>d :VimwikiToggleListItem<CR>
 let g:vimwiki_list = [{'path': '/Users/wcatron/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
 " Script exec shortcuts
-map <Leader>r :!ruby %<CR>
 map <Leader>p :!python %<CR>
+map <Leader>c :!cargo check<CR>
+map <Leader>r :!cargo run<CR>
+map <Leader>t :!cargo test<CR>
 
 " Nerttree shortcuts
 map <Leader>n :NERDTreeToggle<CR>
