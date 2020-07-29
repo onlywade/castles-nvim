@@ -17,6 +17,8 @@ Plug 'mileszs/ack.vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'maksimr/vim-jsbeautify'
+Plug 'tpope/vim-surround'
+Plug 'junegunn/vim-easy-align'
 Plug 'tmhedberg/SimpylFold'
 Plug 'Konfekt/FastFold'
 call plug#end()
@@ -50,6 +52,7 @@ nmap <C-j> 3j3<C-e>
 nmap <C-k> 3k3<C-y>
 noremap <Leader>Y "*y
 noremap <Leader>P "*p
+noremap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
 " vimwiki config
 map <Leader>d :VimwikiToggleListItem<CR>
